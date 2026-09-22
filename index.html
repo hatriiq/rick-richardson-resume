@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rick Richardson — software engineering, structural design, and technical operations.">
+  <title>Rick Richardson — Interactive Résumé</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grid-bg" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="monogram" href="#top" aria-label="Rick Richardson home">RR<span>.</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#evidence">Evidence</a>
+    </nav>
+    <a class="contact-link" href="mailto:rick.richardson.dev@outlook.com">Contact <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="intro shell">
+      <div class="eyebrow"><span class="pulse"></span> Richland, Washington · Open to the right opportunity</div>
+      <h1>Rick<br><span>Richardson</span></h1>
+      <div class="intro-grid">
+        <p class="lead">I solve complicated technical problems and turn messy workflows into reliable systems.</p>
+        <div class="identity">
+          <span>Software Engineering</span>
+          <span>Structural Design</span>
+          <span>Technical Operations</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="depth-console shell" aria-labelledby="depth-heading">
+      <div class="console-title">
+        <p class="kicker">VIEW CONTROL</p>
+        <h2 id="depth-heading">Choose how deep you want to go.</h2>
+      </div>
+      <div class="depth-control">
+        <div class="depth-labels" aria-hidden="true"><span>30 sec</span><span>2 min</span><span>Technical</span></div>
+        <input id="depth" type="range" min="1" max="3" step="1" value="2" aria-label="Resume detail level">
+        <p id="depth-status" role="status">Standard view · role scope, outcomes, and core tools</p>
+      </div>
+    </section>
+
+    <section class="snapshot shell" aria-labelledby="snapshot-heading">
+      <div class="section-head">
+        <p class="index">01 / SNAPSHOT</p>
+        <h2 id="snapshot-heading">A hybrid builder with range.</h2>
+      </div>
+      <div class="stat-grid">
+        <article><strong>Top 1%</strong><span>ticket-resolution performance</span></article>
+        <article><strong>4</strong><span>professional certifications</span></article>
+        <article><strong>B.S.</strong><span>Software Engineering</span></article>
+        <article><strong>10+ yrs</strong><span>technical operations &amp; construction</span></article>
+      </div>
+      <p class="detail standard">My work sits at the intersection of construction knowledge, software thinking, and operational discipline. I can read the plan, diagnose the failure, improve the workflow, and build the tool.</p>
+      <p class="detail technical">That cross-domain perspective includes production truss design, C#/.NET application development, data-center operations, technical project leadership, and translating real-world constraints into repeatable systems.</p>
+    </section>
+
+    <section id="experience" class="experience shell" aria-labelledby="experience-heading">
+      <div class="section-head sticky-head">
+        <p class="index">02 / EXPERIENCE</p>
+        <h2 id="experience-heading">Work, with the evidence attached.</h2>
+      </div>
+      <div class="timeline">
+        <article class="role open">
+          <button class="role-toggle" aria-expanded="true">
+            <span class="year">2025—NOW</span>
+            <span class="role-name"><b>Truss Designer</b><small>The Truss Company · Pasco, WA</small></span>
+            <span class="toggle-icon">−</span>
+          </button>
+          <div class="role-body">
+            <p>Design roof and floor truss systems, interpret construction documents, and solve geometry, loading, and production constraints for manufacturing-ready packages.</p>
+            <div class="detail standard chip-row"><span>MiTek Structure</span><span>Roof &amp; floor loading</span><span>Complex geometry</span><span>Quote accuracy</span></div>
+            <div class="detail technical technical-note"><b>Typical problem space:</b> concentrated loads, girder reactions, uplift, bearing sizing, horizontal deflection, material constraints, snow loading, and constructability.</div>
+          </div>
+        </article>
+
+        <article class="role">
+          <button class="role-toggle" aria-expanded="false">
+            <span class="year">2022—2023</span>
+            <span class="role-name"><b>Data Center Operations Technician III</b><small>TEKsystems</small></span>
+            <span class="toggle-icon">+</span>
+          </button>
+          <div class="role-body">
+            <p>Diagnosed and resolved data-center infrastructure work at production scale with strong security, process, and documentation discipline.</p>
+            <div class="detail standard proof-list"><span>Top 1% in ticket resolves</span><span>Week 40 &amp; Week 50 winner</span><span>Selected as 1 of 3 regional ticket auditors</span></div>
+            <div class="detail technical technical-note">Trusted to audit secure data-destruction media and review ticket quality across the region—responsibilities that depended on accuracy, judgment, and procedural consistency.</div>
+          </div>
+        </article>
+
+        <article class="role">
+          <button class="role-toggle" aria-expanded="false">
+            <span class="year">2018—2025</span>
+            <span class="role-name"><b>Project Lead / Technical Operations</b><small>Koehler Construction</small></span>
+            <span class="toggle-icon">+</span>
+          </button>
+          <div class="role-body">
+            <p>Led construction work from requirements through execution, coordinating technical decisions, field constraints, quality, and customer outcomes.</p>
+            <div class="detail standard chip-row"><span>Project delivery</span><span>Estimating</span><span>Field operations</span><span>Client communication</span></div>
+            <div class="detail technical technical-note">Built the practical construction foundation that now strengthens my structural-design judgment and my ability to create software around real workflows.</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="project shell" aria-labelledby="project-heading">
+      <div class="project-marker">FEATURED BUILD / 01</div>
+      <div class="project-copy">
+        <p class="index">STRUCTURAL LOAD ANALYZER</p>
+        <h2 id="project-heading">A repetitive calculation became a reusable system.</h2>
+        <p class="project-summary">A Windows desktop utility built to standardize common structural-load calculations and create clear, job-linked output.</p>
+        <div class="detail standard flow" aria-label="Project workflow">
+          <span>Manual inputs</span><i>→</i><span>Validated calculations</span><i>→</i><span>Consistent output</span>
+        </div>
+        <div class="detail technical build-list">
+          <div><small>STACK</small><b>C# · .NET · WinForms</b></div>
+          <div><small>CORE</small><b>PIF16 parsing · validation · calculation modules</b></div>
+          <div><small>OUTPUT</small><b>Job persistence · timestamps · copy-ready results</b></div>
+          <div><small>DELIVERY</small><b>Single-file Windows deployment</b></div>
+        </div>
+      </div>
+      <div class="app-window" aria-label="Stylized Structural Load Analyzer interface">
+        <div class="window-bar"><span></span><span></span><span></span><em>STRUCTURAL LOAD ANALYZER</em></div>
+        <div class="app-tabs"><b>STAIR</b><span>FLOOR</span><span>WALL</span><span>RIDGE</span></div>
+        <div class="app-content">
+          <label>TRIBUTARY WIDTH <span>12′—4 ⅜″</span></label>
+          <label>DESIGN LOAD <span>100 PSF</span></label>
+          <div class="calc-output"><small>CALCULATED LINE LOAD</small><strong>1,237.5 <i>PLF</i></strong></div>
+          <div class="validated">✓ INPUT VALIDATED</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="evidence" class="evidence shell" aria-labelledby="evidence-heading">
+      <div class="section-head">
+        <p class="index">03 / CLAIMS → PROOF</p>
+        <h2 id="evidence-heading">No floating skill words.</h2>
+      </div>
+      <div class="evidence-grid">
+        <article><span>01</span><h3>Complex problem solving</h3><p>Structural systems, failure diagnosis, competing constraints, and manufacturing-ready outcomes.</p></article>
+        <article><span>02</span><h3>Software engineering</h3><p>B.S. foundation plus a working .NET tool designed around an actual business process.</p></article>
+        <article><span>03</span><h3>Operational performance</h3><p>Top 1% ticket-resolution performance, regional audit selection, and secure media responsibility.</p></article>
+      </div>
+      <div class="certs detail standard">
+        <p>CREDENTIALS</p>
+        <span>AWS Certified Cloud Practitioner</span><span>ITIL 4 Foundation</span><span>CompTIA Project+</span><span>Microsoft MTA: SDF</span>
+      </div>
+    </section>
+
+    <section class="closing shell">
+      <p>THE SHORT VERSION</p>
+      <h2>I don't just work inside systems.<br><span>I learn them, improve them, and build better ones.</span></h2>
+      <div class="closing-actions">
+        <a class="primary" href="mailto:rick.richardson.dev@outlook.com">Start a conversation <span>↗</span></a>
+        <a href="Rick_Richardson_Resume.pdf" target="_blank" rel="noopener">Download PDF résumé ↗</a>
+      </div>
+      <small>rick.richardson.dev@outlook.com · Richland, Washington</small>
+    </section>
+  </main>
+
+  <footer class="shell"><b>RR<span>.</span></b><p>Rick Richardson · 2026</p><a href="#top">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
